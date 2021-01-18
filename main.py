@@ -27,7 +27,6 @@ class Net(nn.Module):
         # We have a huge number of neurons because of high resolution, so it's a good idea to dropout
         self.dropout = nn.Dropout(0.85)
         # Linear layers
-        #self.fc1 = nn.Linear(18496, 2048)
         self.fc1 = nn.Linear(9248, 2048)
         self.fc2 = nn.Linear(2048, 128)
         self.fc3 = nn.Linear(128, 2)
